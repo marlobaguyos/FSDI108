@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ERP';
+
+
+    constructor(){
+        console.log("hello, I'm the constructor");
+        var name: string = "Sergio Inzunza";
+
+        name = 9;
+    }
 }
