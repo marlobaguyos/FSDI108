@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 
 import {FormsModule} from '@angular/forms';
 import { ConverterComponent } from './components/converter/converter.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        ConverterComponent
+        ConverterComponent,
+        NavBarComponent,
+        MainPageComponent,
+        ContactPageComponent
     ],
     imports: [
         BrowserModule,
