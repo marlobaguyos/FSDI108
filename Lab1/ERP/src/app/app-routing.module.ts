@@ -5,7 +5,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 
 //register the routes (paths) for your pages
 const routes: Routes = [
-    {path: '', component: MainPageComponent},
+    {path: 'mainPage', component: MainPageComponent},
     {path: 'contact', component: ContactPageComponent}
 ];
 
