@@ -9,6 +9,7 @@ import { ConverterComponent } from './components/converter/converter.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
         ConverterComponent,
         NavBarComponent,
         MainPageComponent,
-        ContactPageComponent
+        ContactPageComponent,
+        LoginComponent
     ],
     imports: [
         BrowserModule,
