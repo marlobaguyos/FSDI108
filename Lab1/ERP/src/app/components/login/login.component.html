@@ -4,7 +4,9 @@
         <input [(ngModel)]="userName" name="userName" class="form-control" type='text' placeholder="User Name">
         <input [(ngModel)]="password" name="password" class="form-control" type='text' placeholder="Password">
 
-        <div *ngIf="loginError" class=""
+        <div *ngIf="loginError" class="alert alert-danger">
+            Wrong Credential, Please Go Home!
+        </div>
         <button (click)="login()" class="btn btn-info">Sing in</button>
     </div>
 </div>

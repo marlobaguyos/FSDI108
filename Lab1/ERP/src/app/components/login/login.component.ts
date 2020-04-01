@@ -28,8 +28,10 @@ export class LoginComponent {
         console.log("Logged in correctly!");
         found = true;
         this.loginError = false;
+
+        // send the user to register page
+        this.router.navigate
       }
-      else{}
     }
     if(!found){
       console.error("Wrong credentials!!");
