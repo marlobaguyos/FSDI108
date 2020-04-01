@@ -20,11 +20,16 @@ export class LoginComponent {
     //travel the list of users
     //compare each user credentials with values from the form
 
+    var found = false
     for (let i = 0; i < this.allUsers.length; i++){
       var user = this.allUsers[i];
       if(user.userName == this.userName && user.password == this.password){
         console.log("Logged in correctly!");
+        found = true;
       }
+    }
+    if(!found){
+      console.error("Wrong credentials!!");
     }
   }
 
