@@ -10,6 +10,7 @@ export class LoginComponent {
   userName = '';
   password = '';
   allUsers = [];
+  loginError = false;
 
   constructor(private data: DataService) {
     //get all users
@@ -26,10 +27,13 @@ export class LoginComponent {
       if(user.userName == this.userName && user.password == this.password){
         console.log("Logged in correctly!");
         found = true;
+        this.loginError = false;
       }
+      else{}
     }
     if(!found){
       console.error("Wrong credentials!!");
+      this.loginError = true;
     }
   }
 

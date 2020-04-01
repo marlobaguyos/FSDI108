@@ -4,6 +4,7 @@
         <input [(ngModel)]="userName" name="userName" class="form-control" type='text' placeholder="User Name">
         <input [(ngModel)]="password" name="password" class="form-control" type='text' placeholder="Password">
 
-        button
+        <div *ngIf="loginError" class=""
+        <button (click)="login()" class="btn btn-info">Sing in</button>
     </div>
 </div>
